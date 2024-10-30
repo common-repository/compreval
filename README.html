@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>ComPreVal for WordPress</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+	body { background:#edc;color:#333;font:90%/140% sans-serif;text-align:center; }
+	#content { background:#fff;width:40em;margin:2em auto;padding:.5em 2em;text-align:left; }
+	h1 { font:bold 1.6em/120% sans-serif;border-bottom:1px solid #e71; }
+	h2 { font-size: 1.2em; }
+	</style>
+</head>
+<body>
+<div id="content">
+	<h1>ComPreVal</h1>
+	<h2>Comment Preview and Validation plugin for WordPress</h2>
+	<p>This plugin has three components:</p>
+	<ol>
+		<li>Comment Preview plugin</li>
+		<li>Safe HTML plugin</li>
+		<li>Comments template</li>
+	</ol>
+	<p>Place both the plugin files (<code>compreval.php</code> and <code>safehtml.php</code>)
+	in the <code>wp-content/plugins</code> folder and then activate them in the admin panel.</p>
+	<p>Then place the <code>comments.php</code> template file in your theme folder. If you are
+	using the 1.5 default this is <code>wp-content/themes/default</code>. If you use another
+	theme, you can edit its comment template file and replace the comment form there with
+	the plugin's php function:</p>
+	<blockquote><p><code>&lt;?php bnCommentPreviewValidate(); ?&#062;</code></p></blockquote>
+	<p>This will force the comment to be previewed before it is submitted. During the preview
+	stage the comment will be checked for valid XHTML. Errors need to be corrected before the
+	comment can be submitted.</p>
+	<p>To keep the whole page valid it is recommended to moderate pingbacks and trackbacks.</p>
+	<p>The SafeHTML code was written by <a href="http://simon.incutio.com/archive/2003/02/23/safeHtmlChecker">
+	Simon Willison</a> and formed into a WordPress plugin by <a href="http://novemberborn.net/">Mark Wubben</a>.
+	The Comment Preview plugin was written by <a href="http://novemberborn.net">Mark Wubben</a> and
+	edited and updated by <a href="http://stijlstek.nl/">Ben de Groot</a>.</p>
+	<p>This plugin is released "as is", without warranty of any kind, and is licensed under the GPL,
+	see the included <a href="license.txt">license.txt</a> file.</p>
+</div>
+</body>
+</html>
